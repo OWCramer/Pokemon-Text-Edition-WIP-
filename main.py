@@ -155,4 +155,4 @@ while True:
 sprites.rival()
 rival_name = ("Silver")
 print ("Hey im your rival Silver!\nI got my first Pokemon today to! Lets Battle!")
-#-------------------------------------------------------------------------
+#------------------------------------------------------------------------
