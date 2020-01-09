@@ -147,4 +147,4 @@ while True:
 
 
 #Meeting rival
-print ("Hey ")
+print ("Hey im undefined ")

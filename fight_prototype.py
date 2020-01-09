@@ -5,7 +5,7 @@ from random import randint
 
 class Enemy_poke_name_here():
   def name():
-    print ("Test_enemy_nam")
+    print ("Test_enemy_name")
   def move1():
     print ("ET1")
     Eattack = 5
@@ -36,6 +36,7 @@ class Poke_name_here():
     print ("AT4")
   def Health():
     health = 50
+
 def fight():
   Ehealth = 0
   #global Enemy_poke_name_here.Health()
