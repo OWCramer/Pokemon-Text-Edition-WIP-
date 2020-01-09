@@ -16,3 +16,81 @@ Pansear
   Simisear
 Panpour
   Simisear
+Munna
+  Musharna
+Pidove
+  Tranquill
+    Unfezant
+Roggenrola
+  Boldore
+    Gigalith
+Drilbur
+  Excadrill
+Audino
+Timburr
+  Gurdurr
+    Conkeldurr
+Throh
+  Sawk
+Sewaddle
+  Swadloon
+    Leavanny
+Venipede
+  Whirlipede
+    Scolipede
+Sandile
+  Krokorok
+    Krookodile
+Darumaka
+  Darmanitan
+Sigilyph
+Yamask
+  Cofagrigus
+Tirtouga
+	Carracosta
+Archen
+  Archeops
+Zorua
+  Zoroark
+Gothita
+  Gothorita
+    Gothitelle
+Ferroseed
+  Ferrothorn
+Klink
+  Klang
+    Klinklang
+Elgyem
+  Beheeyem
+Litwick
+  Lampent
+    Chandelure
+Axew
+  Fraxure
+    	Haxorus
+Druddigon
+Golett
+  Golurk
+Pawniard
+  Bisharp
+Rufflet
+  Braviary
+Deino
+  Zweilous
+    Hydreigon
+Larvesta
+  Volcarona
+##################
+LEGENDARY'S
+##################
+Cobalion
+Terrakion
+Virizion
+Tornadus
+Thundurus
+Landorus
+Reshiram
+Zekrom
+Keldeo
+Meloetta
+Victini

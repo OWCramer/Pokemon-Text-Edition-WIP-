@@ -20,20 +20,22 @@ clear()
 
 '''Professor Dialogue'''
 #Professor Startup
-print ("Hello,\n Weclome to the Unova Region. I'm professor Aurea Juniper, and I heard you were interested in the world of pokemon! Is that true?(Yes/No)")
+print ("Hello,\n Weclome to the Unova Region. I'm professor Aurea Juniper, and I heard you were interested in the world of pokemon!")
 while True:
+  print("Is that true?(Yes/No)")
   ready_choice = input(': ')
   ready_choice = ready_choice.lower()
   #Exit Screen
   if ready_choice == 'no':
     clear()
     print ('Fine No Game!')
-    screens.screen_error
+    screens.screen_error()
     quit()
   elif ready_choice == "yes":
     break
-    
-  #
+  else:
+    print("I need a Yes/No answer")
+    continue
 
 #Aurea Juniper Dialougue asks if user wants Pokemon
 def do_you_want():
@@ -43,7 +45,7 @@ def do_you_want():
     if pokemon_own == 'no':
       clear()
       print ("Well maybe I'll ask another time.")
-      screens.screen_error
+      screens.screen_error()
       quit()
     elif pokemon_own == 'yes':
       print ('Before we get you a pokemon,')
@@ -91,6 +93,8 @@ print ('Nice to meet you ' + name + "!")
 #chosing pokemon 
 print ("Now that I know your name you can choose a pokemon!")
 pokemon_list = []
+pokemon_list_rival = []
+pokemon_list_pc = []
 while True:
   print ('Which pokemon would you like to choose?(Snivy/Oshawott/Tepig)')
   pokemon_choice = input(": ")
@@ -101,6 +105,7 @@ while True:
     if are_you_sure == 'yes':
       cprint('You chose Snivy', "green")
       pokemon_list.append("Snivy")
+      pokemon_list_rival.append("Oshawott")
       time.sleep(1.5)
       input("Press Enter to continue")
       clear()
@@ -116,6 +121,7 @@ while True:
     if are_you_sure == 'yes':
       cprint('You chose Oshawott', "blue")
       pokemon_list.append("Oshawott")
+      pokemon_list_rival.append("Tepig")
       time.sleep(1.5)
       input("Press Enter to continue")
       clear()
@@ -131,6 +137,7 @@ while True:
     if are_you_sure == 'yes':
       cprint('You chose Tepig', "red")
       pokemon_list.append("Tepig")
+      pokemon_list_rival.append("Snivy")
       time.sleep(1.5)
       input("Press Enter to continue")
       clear()
@@ -145,5 +152,7 @@ while True:
 
 
 #Meeting rival
-
-print ("Hey im your rival Silver! ")
+sprites.rival()
+rival_name = ("Silver")
+print ("Hey im your rival Silver!\nI got my first Pokemon today to! Lets Battle!")
+#-------------------------------------------------------------------------
