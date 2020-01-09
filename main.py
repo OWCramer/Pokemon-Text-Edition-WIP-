@@ -1,13 +1,11 @@
 #Gets Program and Screens Ready
-def title_screen():
-  from startup import title_screen
-def error_screen():
-  from startup import error_screen
+import screens
 import random
 import os
 import time
 from termcolor import colored, cprint
 import fight_prototype
+import sprites
 
 #Defines how to clear
 def clear():
@@ -15,7 +13,7 @@ def clear():
 
 #Main Title Screen
 print ("Welcome to Pokemon Text Edition (Now in Python!)")
-title_screen()
+screens.screen_title()
 print ("")
 input('To begin your journey press enter')
 clear()
@@ -30,7 +28,7 @@ while True:
   if ready_choice == 'no':
     clear()
     print ('Fine No Game!')
-    error_screen()
+    screens.screen_error
     quit()
   elif ready_choice == "yes":
     break
@@ -45,7 +43,7 @@ def do_you_want():
     if pokemon_own == 'no':
       clear()
       print ("Well maybe I'll ask another time.")
-      error_screen()
+      screens.screen_error
       quit()
     elif pokemon_own == 'yes':
       print ('Before we get you a pokemon,')
@@ -147,4 +145,5 @@ while True:
 
 
 #Meeting rival
-print ("Hey im undefined ")
+
+print ("Hey im your rival Silver! ")

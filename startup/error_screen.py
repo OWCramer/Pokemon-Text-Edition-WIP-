@@ -1,2 +1,0 @@
-from termcolor import colored
-error_screen = print(colored('[__  ]    [  __]\n   \ \    / /\n    \ \  / /\n     \ \/ /\n      \  /\n      /  \ \n     / /\ \ \n    / /  \ \ \n   / /    \ \ \n _/ /      \ \_\n[___]      [___] ', 'red'))

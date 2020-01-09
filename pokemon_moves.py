@@ -7,4 +7,3 @@ class Moves():
     grass_moves = []
   def move_list_water():
     water_moves = []
-tackle = 10
