@@ -1,5 +1,32 @@
+class CPS1():
+    def __init__(self, BaseHP = 50):
+        self.BaseHP = BaseHP
+        self.Lv = 5
+        self.name = pokemon_list[0]
+        self.HP = 0.02 * self.Lv * self.BaseHP * 10
+        MoveCC = 20
+        MoveMC = MoveCC * 2
+        EPNeeded = 10
+        self.EP = 0.0
+        self.move_one = "Tackle"
+        self.move_one_attack = 10
+        self.move_one_CC = 40
+        self.move_two = "Growl"
+        self.move_two_attack = 0
+        self.move_two_CC = 40
+        self.move_three = "Empty"
+        self.move_three_attack = 0
+        self.move_three_CC = 40
+        self.move_four = "Empty"
+        self.move_four_attack = 0
+        self.move_four_CC = 40
+        if self.EP >= EPNeeded:
+            Lv = Lv + 1
+            EP = EP - EPNeeded
+            EPNeeded = EPNeeded * .5
+
 class Snivy_Class():
-    def __init__(self, name, health, level, BaseHP = 20):
+    def __init__(self, name, health, level, BaseHP = 45):
         self.name = name
         self.Lv = Lv
         self.HP = HP
@@ -18,6 +45,8 @@ class Snivy_Class():
             Lv = Lv + 1
             EP = EP - EPNeeded
             EPNeeded = EPNeeded * 1.5
+
+
 
 Snivy
   Servine

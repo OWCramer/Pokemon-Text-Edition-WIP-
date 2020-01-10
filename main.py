@@ -6,6 +6,7 @@ import time
 from termcolor import colored, cprint
 import sprites
 import scenarios
+import Rival_Fight
 
 #Defines how to clear
 def clear():
@@ -21,12 +22,8 @@ def fake_load():
     print ("[" + load_bar + end_cap + ']')
     x = x - 1
     load_bar = load_bar + "="
-    time.sleep(.5)
+    time.sleep(.1)
     clear()
-
-#defines a fight
-def iniate_fight():
-  fight_prototype
 
 #Main Title Screen
 print ("Welcome to Pokemon Text Edition (Now in Python!)")
@@ -34,7 +31,7 @@ screens.screen_title()
 print ("")
 input('To begin your journey press enter')
 clear()
-#fake_load()
+fake_load()
 
 '''Professor Dialogue'''
 #Professor Startup
@@ -172,13 +169,19 @@ while True:
   else:
     print ("Please Check the Spelling of the PKMN name you typed!")
     scenarios.error()
-
-
 #Meeting rival
 sprites.rival()
 rival_name = ("Silver")
 print ("Hey im your rival Silver!\nI got my first Pokemon today to! Lets Battle!")
 time.sleep(1.5)
 input("Press enter to continue.")
-#------------------------------------------------------------------------
-iniate_fight()
+clear()
+fake_load()
+#Starts fight
+def Rival_fight():
+  Rival_Fight #is fight
+Rival_fight()
+#ends fight
+#Continues Story
+clear()
+print ("Thanks for playing this is a WIP")
