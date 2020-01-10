@@ -1,3 +1,24 @@
+class Snivy_Class():
+    def __init__(self, name, health, level, BaseHP = 20):
+        self.name = name
+        self.Lv = Lv
+        self.HP = HP
+        self.EP = EP
+        self.BaseHP = BaseHP
+    def Poke_name(self, name):
+        name = "Snivy"
+    def poke_level(self, Lv):
+        Lv = 5
+    def poke_HP(self, HP):
+        HP = 0.02 * Lv * BaseHP * 10
+    def poke_EX(self, EX):
+        EPNeeded = 10
+        EP = 0.0
+        if EP >= EPNeeded:
+            Lv = Lv + 1
+            EP = EP - EPNeeded
+            EPNeeded = EPNeeded * 1.5
+
 Snivy
   Servine
     Serperior

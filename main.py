@@ -6,10 +6,24 @@ import time
 from termcolor import colored, cprint
 import fight_prototype
 import sprites
+import scenarios
 
 #Defines how to clear
 def clear():
     os.system('cls' if os.name=='nt' else 'clear')
+
+#defines a loading bar
+def fake_load():
+  load_bar = "="
+  x = 20
+  for i in range(21):
+    end_cap = " "*x
+    print ("Loading...")
+    print ("[" + load_bar + end_cap + ']')
+    x = x - 1
+    load_bar = load_bar + "="
+    time.sleep(.5)
+    clear()
 
 #Main Title Screen
 print ("Welcome to Pokemon Text Edition (Now in Python!)")
@@ -17,6 +31,7 @@ screens.screen_title()
 print ("")
 input('To begin your journey press enter')
 clear()
+#fake_load()
 
 '''Professor Dialogue'''
 #Professor Startup
@@ -35,6 +50,7 @@ while True:
     break
   else:
     print("I need a Yes/No answer")
+    scenarios.error()
     continue
 
 #Aurea Juniper Dialougue asks if user wants Pokemon
@@ -52,6 +68,7 @@ def do_you_want():
       break
     else:
       print ("I need a Yes or No answer!")
+      scenarios.error()
       print ("Did you want a Pokemon?")
 
 print ("That's great to hear. I'm excited to help you begin your adventure.")
@@ -69,6 +86,7 @@ while True:
     break
   else:
     print ("I need a Yes or No answer!")
+    scenarios.error()
     continue
 
 #gets users Name
@@ -85,6 +103,7 @@ while True:
     break
   else:
     print ("I need a Yes or No answer!")
+    scenarios.error()
 clear()
 
 #continue dialogue 
@@ -149,6 +168,7 @@ while True:
       continue
   else:
     print ("Please Check the Spelling of the PKMN name you typed!")
+    scenarios.error()
 
 
 #Meeting rival
