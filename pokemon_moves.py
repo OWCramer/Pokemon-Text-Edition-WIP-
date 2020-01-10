@@ -9,4 +9,3 @@ class Moves():
     water_moves = []
   def move_list_normal():
     normal_moves = []
-#your pp smull

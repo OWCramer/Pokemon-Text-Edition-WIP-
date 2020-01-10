@@ -4,7 +4,6 @@ import random
 import os
 import time
 from termcolor import colored, cprint
-import fight_prototype
 import sprites
 import scenarios
 
@@ -24,6 +23,10 @@ def fake_load():
     load_bar = load_bar + "="
     time.sleep(.5)
     clear()
+
+#defines a fight
+def iniate_fight():
+  fight_prototype
 
 #Main Title Screen
 print ("Welcome to Pokemon Text Edition (Now in Python!)")
@@ -175,4 +178,7 @@ while True:
 sprites.rival()
 rival_name = ("Silver")
 print ("Hey im your rival Silver!\nI got my first Pokemon today to! Lets Battle!")
+time.sleep(1.5)
+input("Press enter to continue.")
 #------------------------------------------------------------------------
+iniate_fight()

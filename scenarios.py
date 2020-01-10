@@ -1,4 +1,4 @@
-#Different scenarios ex. visiting the pokemon ConnectionError
+'''Different scenarios ex. visiting the pokemon center'''
 
 def pokemon_center():
   print ("Hello im nurse Joy!")
