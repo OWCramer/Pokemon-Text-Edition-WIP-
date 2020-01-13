@@ -178,9 +178,7 @@ input("Press enter to continue.")
 clear()
 fake_load()
 #Starts fight
-def Rival_fight():
-  Rival_Fight #is fight
-Rival_fight()
+Rival_Fight.fight()
 #ends fight
 #Continues Story
 clear()
